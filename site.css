@@ -1,20 +1,44 @@
 body {
     margin: 0px;
     overflow: hidden;
-}
-
-.window-border {
-    height: 4.5%;
-    width: 100%;
-    border: 1px black;
-    padding:1px;
-    border-style: solid;
+    font-family: Consolas,monaco,monospace; 
+    font-size: 15;
 }
 
  .window {
     background-color: black;
     color: white;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     overflow-y: scroll;
 } 
+
+div.window > span {
+    width: calc(95vw - 20px);
+    display: block;
+    word-break: break-all;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+div.window > span:before {
+    content:  "> ";
+ }
+
+#div-user-input {
+    display:block;
+    width: 100vw;
+}
+
+#div-user-input > span {
+}
+
+.text-input {
+    color: white;
+    width: calc(95vw - 20px);
+    background: black;
+    font-family: Consolas,monaco,monospace; 
+    font-size: 15;
+    padding-left: 0px;
+    border: none;
+}
